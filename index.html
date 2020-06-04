@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+   <title>рассчет пули</title>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <script src="./public/js/app.js">
+      type = "text/javascript"
+   </script>
+</head>
+
+<body>
+   <div class="main" id="mainPic">
+      <h1>Рассчет пули на 3 человек</h1>
+
+      <input tabindex=7 class="dataBox" type="number" id="playerU0">
+      <input tabindex=9 class="dataBox" type="number" id="playerU1">
+      <input tabindex=11 class="dataBox" type="number" id="playerU2">
+      <input tabindex=12 class="dataBox" type="number" id="playerU3">
+
+      <input tabindex=2 class="dataBox" type="number" id="playerZ0">
+      <input tabindex=5 class="dataBox" type="number" id="playerZ1">
+      <input tabindex=1 class="dataBox" type="number" id="playerZ2">
+      <input tabindex=8 class="dataBox" type="number" id="playerZ3">
+
+      <input tabindex=3 class="dataBox" type="number" id="playerV0">
+      <input tabindex=6 class="dataBox" type="number" id="playerV1">
+      <input tabindex=4 class="dataBox" type="number" id="playerV2">
+      <input tabindex=10 class="dataBox" type="number" id="playerV3">
+
+
+      <p class="result" id="ResultPlayerU"></p>
+      <P class="playerPosition" id="infoPlayerU">Игрок "Юг"</P>
+
+      <p class="result" id="ResultPlayerZ"></p>
+      <P class="playerPosition" id="infoPlayerZ">Игрок "Запад"</P>
+
+      <p class="result" id="ResultPlayerV"></p>
+      <P class="playerPosition" id="infoPlayerV">Игрок "Восток"</P>
+
+      <p> <button id="button" onclick="calculate(dataPlayerU, dataPlayerZ, dataPlayerV)">рассчет</button></p>
+   </div>
+</body>
+
+</html>
